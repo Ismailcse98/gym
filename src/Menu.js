@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 export default function Menu() {
     const [data, setData]= useState({})
     useEffect(() =>{
-        fetch('http://127.0.0.1:8000/api/general')
+        fetch('http://techsolutions-bd.com/gymadmin/api/general')
         .then(res=>res.json())
         .then(data=>setData(data.data))
     },[])
@@ -28,7 +28,7 @@ export default function Menu() {
                 <div className="container">
                     <hr className="top" />
                     <nav className="navbar navbar-expand-lg">
-                        <a className="navbar-brand" href="index.html"><div className="logo-brand"><img src={'http://127.0.0.1:8000/assets/uploads/'+data.logo} alt="" /></div></a>
+                        <a className="navbar-brand" href="index.html"><div className="logo-brand"><img src={'http://techsolutions-bd.com/gymadmin/assets/uploads/'+data.logo} alt="" /></div></a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

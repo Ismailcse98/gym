@@ -4,7 +4,7 @@ import ShowActionTop from "./ShowActionTop";
 export default function ActiongymTop() {
   const [data, setData] = useState([]);
   useEffect(()=>{
-    fetch('http://127.0.0.1:8000/api/action-top')
+    fetch('http://techsolutions-bd.com/gymadmin/api/action-top')
     .then(res=>res.json())
     .then(data=>setData(data.data))
   },[]);

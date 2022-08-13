@@ -4,7 +4,7 @@ export default function ShowTrainers(props){
         <>
         <div className="col-lg-4 profile-card">
             <div className="team-box">
-                <figure className="avatar"><img src={'http://127.0.0.1:8000/assets/uploads/'+image} alt="" /></figure>
+                <figure className="avatar"><img src={'http://techsolutions-bd.com/gymadmin/assets/uploads/'+image} alt="" /></figure>
                 <div className="team-social lineal">
                     <div className="circle-icon">
                         <a href={facebook}><div className="center-fa"><i className="fa fa-facebook" aria-hidden="true"></i></div></a>

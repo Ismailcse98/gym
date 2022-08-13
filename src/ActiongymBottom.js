@@ -5,7 +5,7 @@ import ShowActionBottomRight from "./ShowActionBottomRight";
 export default function ActiongymBottom() {
     const[actionBottom, setActionBottom] = useState([]);
     useEffect(()=>{
-        fetch('http://127.0.0.1:8000/api/action-bottom')
+        fetch('http://techsolutions-bd.com/gymadmin/api/action-bottom')
         .then(res=>res.json())
         .then(data=>setActionBottom(data.data))
     },[]);

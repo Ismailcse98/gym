@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function Footer() {
     const [data, setData]= useState({})
     useEffect(() =>{
-        fetch('http://127.0.0.1:8000/api/general')
+        fetch('http://techsolutions-bd.com/gymadmin/api/general')
         .then(res=>res.json())
         .then(data=>setData(data.data))
     },[])
@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="container">
             <div className="row">
               <div className="col-lg-5"> 
-                <figure className="footer-logo"><img src={'http://127.0.0.1:8000/assets/uploads/'+data.logo} alt=""/></figure>
+                <figure className="footer-logo"><img src={'http://techsolutions-bd.com/gymadmin/assets/uploads/'+data.logo} alt=""/></figure>
                 <div className="footer-about">
                     <p>{data.description}</p>
                 </div>

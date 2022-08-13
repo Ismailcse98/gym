@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function Banner() {
     const [banner, setBanner] = useState({});
     useEffect(()=>{
-        fetch('http://127.0.0.1:8000/api/banner')
+        fetch('http://techsolutions-bd.com/gymadmin/api/banner')
         .then(res=>res.json())
         .then(data=>setBanner(data.data));
     },[]);

@@ -4,7 +4,7 @@ import ShowTrainers from "./ShowTrainers";
 export default function Trainers(params) {
     const [traindata, setData] = useState([]);
     useEffect(()=>{
-        fetch('http://127.0.0.1:8000/api/trainer-info')
+        fetch('http://techsolutions-bd.com/gymadmin/api/trainer-info')
         .then(res=>res.json())
         .then(data=>setData(data.data))
     },[]);

@@ -7,7 +7,7 @@ export default function ContactForm() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const SendMessage =()=>{
-        axios.post('http://127.0.0.1:8000/api/store_message', {
+        axios.post('http://techsolutions-bd.com/gymadmin/api/store_message', {
             name: name,
             email: email,
             message: message
